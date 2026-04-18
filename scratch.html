@@ -20,7 +20,7 @@
                 <ul>
                     <li>Exfoliate 24 hours before</li>
                     <li>Moisturize dry areas (elbows, knees)</li>
-                    <li>Wear loose clothing</li>
+                    <li>Wear loose, dark clothing</li>
                 </ul>
             </li>
             <li>Application</li>
@@ -37,14 +37,14 @@
         <h2>Customized Solution Picker</h2>
         <p>Find your perfect rinse time and shade:</p>
         
-        <label for="skinTone">Your Skin Tone:</label>
+        <label>Your Skin Tone:</label>
         <select id="skinTone">
             <option value="Fair">Fair / Pale</option>
             <option value="Medium">Medium / Olive</option>
             <option value="Deep">Deep / Dark</option>
         </select>
         <br><br>
-        <label for="event">The Occasion:</label>
+        <label>The Occasion:</label>
         <select id="event">
             <option value="Wedding">Wedding (Subtle & Natural)</option>
             <option value="Vacation">Vacation (Deep & Bronzed)</option>
@@ -52,7 +52,6 @@
         </select>
         <br><br>
         <button onclick="calculateTan()">Get My Recommendation</button>
-        
         <h3 id="result" style="margin-top:20px; color:#d2b48c;"></h3>
     </div>
 
@@ -61,15 +60,13 @@
             var tone = document.getElementById("skinTone").value;
             var occasion = document.getElementById("event").value;
             var resultText = "";
-
             if (occasion === "Wedding") {
-                resultText = "For a Wedding, we recommend a " + tone + " Glow. Rinse in 2 hours for a soft, photo-ready finish.";
+                resultText = "For a Wedding, we recommend a " + tone + " Glow. Rinse in 2 hours for a soft finish.";
             } else if (occasion === "Vacation") {
-                resultText = "For your Vacation, go for the Ultra-Dark. Rinse in 8 hours to ensure the deepest tan possible.";
+                resultText = "For Vacation, go for the Ultra-Dark. Rinse in 8 hours for the deepest tan.";
             } else {
-                resultText = "For your Weekly Glow, a standard " + tone + " Medium is best. Rinse in 4 hours.";
+                resultText = "For a Weekly Glow, a " + tone + " Medium is best. Rinse in 4 hours.";
             }
-            
             document.getElementById("result").innerHTML = resultText;
         }
     </script>
