@@ -1,46 +1,58 @@
-/* BetterBronzed Luxe Palette: Bronze, Gold, and Blush Pink */
+/* Palette: Espresso & Cream (Professional Luxe) */
+
 body {
-    /* FONT FAMILY REQUIREMENT */
+    /* REQUIREMENT: Font Family */
     font-family: 'Playfair Display', serif; 
-    /* CUSTOM BACKGROUND COLOR REQUIREMENT (Soft Blush Pink) */
-    background-color: #FFF0F5; 
-    /* FONT COLOR REQUIREMENT (Deep Espresso Bronze) */
-    color: #3D2B1F; 
+    /* REQUIREMENT: Custom Background Color */
+    background-color: #F9F5F2; 
+    /* REQUIREMENT: Font Color */
+    color: #2D2621; 
     line-height: 1.8;
+    margin: 0;
+    padding: 0;
 }
 
-/* 3 DIVS FOR POSITIONING/STYLING REQUIREMENT */
+/* REQUIREMENT: 3+ Divs for positioning/styling */
 #intro-section, #guide-section, #video-section, #app-section, #tableau-section {
     margin: 40px auto;
     padding: 40px;
-    max-width: 750px;
-    background-color: #ffffff; /* White cards to make the pink background feel clean */
-    border-top: 6px solid #CD7F32; /* Metallic Bronze */
-    border-bottom: 2px solid #D4AF37; /* Champagne Gold */
-    box-shadow: 0 15px 35px rgba(205, 127, 50, 0.1);
+    max-width: 800px;
+    background-color: #ffffff; /* Crisp white cards */
+    border-top: 8px solid #4A3728; /* Deep Espresso */
+    border-bottom: 2px solid #D2B48C; /* Tan Accent */
+    box-shadow: 0 15px 35px rgba(74, 55, 40, 0.05);
     text-align: center;
 }
 
 h1, h2 {
-    color: #804A00; /* Rich Bronze */
+    color: #4A3728;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
-/* Secondary font for paragraphs for better readability */
 p, li, label {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
+    color: #55524E;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px; /* Subtle sharp corners for luxe feel */
+    max-width: 100%;
+    height: auto;
 }
 
 button {
-    background-color: #D4AF37; /* Gold */
-    color: white;
+    background-color: #4A3728;
+    color: #ffffff;
     border: none;
-    padding: 14px 32px;
+    padding: 15px 35px;
     cursor: pointer;
-    border-radius: 4px; /* Sophisticated slight round */
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -48,21 +60,27 @@ button {
 }
 
 button:hover {
-    background-color: #CD7F32; /* Bronze on hover */
+    background-color: #8B735B; /* Taupe on hover */
     transform: translateY(-2px);
 }
 
 nav {
     background-color: #ffffff;
     padding: 20px;
-    border-bottom: 2px solid #D4AF37;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #EAE0D5;
+    text-align: center;
 }
 
 nav a {
-    color: #CD7F32;
+    color: #4A3728;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #8B735B;
 }
