@@ -77,4 +77,43 @@
                 <param name='name' value='HandheldTanningSolutions&#47;HandheldTanningSolutions' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldT
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1.png' /> 
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1776545394900');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <footer style="text-align: center; padding-bottom: 50px;">
+        <a href="#top" style="color: #4A3728; text-decoration: none; font-weight: bold;">Back to Top</a>
+    </footer>
+
+    <script>
+        function calculateTan() {
+            var tone = document.getElementById("skinTone").value;
+            var occasion = document.getElementById("event").value;
+            var resultText = "";
+            if (occasion === "Wedding") {
+                resultText = "For your Wedding, we recommend a " + tone + " Rapid Solution. Rinse in 2 hours for a timeless, natural glow.";
+            } else if (occasion === "Vacation") {
+                resultText = "For Vacation, go for the Express Dark. Rinse in 8 hours to achieve maximum bronzing.";
+            } else {
+                resultText = "For a Weekly Glow, a standard " + tone + " Medium is perfect. Rinse in 4 hours.";
+            }
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>
