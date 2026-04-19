@@ -1,22 +1,19 @@
-/* BetterBronzed - The "Stable" Final Version */
+/* BetterBronzed - The Big Reset */
 
 body {
     font-family: 'Playfair Display', serif; 
-    background-image: linear-gradient(rgba(249, 245, 242, 0.65), rgba(249, 245, 242, 0.65)), 
+    background-image: linear-gradient(rgba(249, 245, 242, 0.70), rgba(249, 245, 242, 0.70)), 
                       url('https://st2.depositphotos.com/2305339/5750/i/450/depositphotos_57508235-stock-photo-close-up-of-female-legs.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #2D2621; 
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
 }
 
-/* This centers the "cards" on the page */
+/* These sections center the content blocks on the page */
 #intro-section, #guide-section, #video-section, #app-section, #tableau-section, .resume-wrapper {
-    display: flex;
-    flex-direction: column; /* Stacks content vertically */
-    align-items: center;    /* Centers everything inside the box horizontally */
     margin: 40px auto;
     padding: 40px;
     max-width: 800px;
@@ -24,59 +21,59 @@ body {
     border-top: 8px solid #4A3728;
     border-bottom: 2px solid #D2B48C;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center; /* This centers the text, buttons, and images */
 }
 
-/* Forces images and videos to be centered without affecting text */
+/* Simple centering for images and video */
 img, iframe {
+    display: inline-block; /* Changed from block to inline-block */
+    margin: 20px auto;
     max-width: 100%;
-    height: auto;
-    margin: 20px 0;
     border: none;
+    border-radius: 4px;
 }
 
 h1, h2 {
     color: #4A3728;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
 }
 
-p, label {
+p, li, label {
     font-family: 'Lato', sans-serif;
-    text-align: center;
-    max-width: 600px; /* Prevents text from stretching too wide */
+    color: #55524E;
 }
 
-/* Fix for the lists - keeps the text left-aligned inside the centered box */
+/* Fix for the lists so they aren't squashed but stay legible */
 .luxe-list {
     text-align: left;
-    align-self: flex-start; /* Aligns the whole list to the left side of the card */
-    margin-left: 20%;      /* Gives it a nice centered feel */
+    display: inline-block;
+    margin: 20px 0;
 }
 
 .luxe-list > li {
     margin-bottom: 20px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .luxe-list ul {
     font-weight: normal;
-    text-transform: none;
     list-style-type: circle;
 }
 
-/* Nav & Buttons */
+/* Nav and Large Resume Button */
 nav { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
 nav a { margin: 0 15px; text-decoration: none; color: #4A3728; font-weight: bold; }
 
 .luxe-button {
     display: inline-block;
     background-color: #4A3728;
-    color: #fff !important;
-    padding: 18px 40px;
+    color: #ffffff !important;
+    padding: 20px 45px;
+    margin-top: 30px;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 20px;
 }
