@@ -15,17 +15,12 @@
         <a href="#tableau-section">Industry Data</a>
     </nav>
 
-    <h1 id="top" style="margin-top: 50px;">Spray Tanning 101</h1>
+    <h1 id="top" style="text-align: center; margin-top: 50px;">Spray Tanning 101</h1>
 
     <div id="intro-section">
-    <p>Mastering a professional glow requires the right preparation and precision.</p>
-    <img src="https://chrislovesjulia.com/wp-content/uploads/2023/03/IMG_3225.jpg" alt="Spray Tan Setup">
-</div>
-
-<div id="video-section">
-    <h2>Watch the Technique</h2>
-    <iframe src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" allowfullscreen></iframe>
-</div>
+        <p>Mastering a professional glow requires the right preparation and precision.</p>
+        <img src="https://chrislovesjulia.com/wp-content/uploads/2023/03/IMG_3225.jpg" alt="Spray Tan Setup" width="500">
+    </div>
 
     <div id="guide-section">
         <h2>The 3-Step Process</h2>
@@ -44,51 +39,23 @@
 
     <div id="video-section">
         <h2>Watch the Technique</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" allowfullscreen></iframe>
     </div>
 
     <div id="app-section">
         <h2>Customized Solution Picker</h2>
         <p>Find your perfect rinse time:</p>
-        <label>Skin Tone:</label>
-        <select id="skinTone"><option value="Fair">Fair</option><option value="Medium">Medium</option><option value="Deep">Deep</option></select>
-        <br><br>
-        <label>Occasion:</label>
-        <select id="event"><option value="Wedding">Wedding</option><option value="Vacation">Vacation</option><option value="Weekly">Weekly</option></select>
-        <br><br>
         <button onclick="calculateTan()">Get Recommendation</button>
-        <h3 id="result" style="margin-top:25px; color:#4A3728;"></h3>
+        <h3 id="result" style="margin-top:25px;"></h3>
     </div>
-
-    <script>
-        function calculateTan() {
-            var tone = document.getElementById("skinTone").value;
-            var occasion = document.getElementById("event").value;
-            var result = (occasion === "Wedding") ? tone + " Rapid - Rinse in 2 hrs" : (occasion === "Vacation") ? "Express Dark - Rinse in 8 hrs" : tone + " Medium - Rinse in 4 hrs";
-            document.getElementById("result").innerHTML = result;
-        }
-    </script>
 
     <div id="tableau-section">
-        <h2>Spray Tan Industry Data</h2>
-        <div class='tableauPlaceholder' id='viz1776545394900' style='position: relative; margin: 0 auto;'>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /><param name='name' value='HandheldTanningSolutions&#47;HandheldTanningSolutions' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1.png' />
-            </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1776545394900');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
-    </div>
+        <h2>Industry Data</h2>
+        </div>
 
     <footer style="text-align: center; padding-bottom: 50px;">
         <a href="#top" style="color: #4A3728; text-decoration: none; font-weight: bold;">Back to Top</a>
     </footer>
+
 </body>
 </html>
