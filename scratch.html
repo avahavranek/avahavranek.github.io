@@ -39,23 +39,42 @@
 
     <div id="video-section">
         <h2>Watch the Technique</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div id="app-section">
         <h2>Customized Solution Picker</h2>
-        <p>Find your perfect rinse time:</p>
-        <button onclick="calculateTan()">Get Recommendation</button>
-        <h3 id="result" style="margin-top:25px;"></h3>
+        <p>Find your perfect rinse time and solution:</p>
+        
+        <label>Your Skin Tone:</label>
+        <select id="skinTone">
+            <option value="Fair">Fair / Pale</option>
+            <option value="Medium">Medium / Olive</option>
+            <option value="Deep">Deep / Dark</option>
+        </select>
+        <br><br>
+        <label>The Occasion:</label>
+        <select id="event">
+            <option value="Wedding">Wedding (Natural & Elegant)</option>
+            <option value="Vacation">Vacation (Deep & Tropical)</option>
+            <option value="Weekly">Weekly Glow (Sun-Kissed)</option>
+        </select>
+        <br><br>
+        <button onclick="calculateTan()">Get My Recommendation</button>
+        <h3 id="result" style="margin-top:25px; color:#4A3728; font-family:'Playfair Display';"></h3>
     </div>
 
     <div id="tableau-section">
-        <h2>Industry Data</h2>
-        </div>
-
-    <footer style="text-align: center; padding-bottom: 50px;">
-        <a href="#top" style="color: #4A3728; text-decoration: none; font-weight: bold;">Back to Top</a>
-    </footer>
-
-</body>
-</html>
+        <h2>Spray Tan Industry Data</h2>
+        <div class='tableauPlaceholder' id='viz1776545394900' style='position: relative; margin: 0 auto;'>
+            <noscript>
+                <a href='#'><img alt='Handheld Tanning Solutions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='HandheldTanningSolutions&#47;HandheldTanningSolutions' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldT
