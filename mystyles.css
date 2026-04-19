@@ -1,25 +1,68 @@
+/* BetterBronzed Luxe Palette: Bronze, Gold, and Blush Pink */
 body {
-    font-family: 'Inter', sans-serif; /* Minimalist Sans-Serif */
-    background-color: #FDFDFD;
-    color: #2D2D2D;
+    /* FONT FAMILY REQUIREMENT */
+    font-family: 'Playfair Display', serif; 
+    /* CUSTOM BACKGROUND COLOR REQUIREMENT (Soft Blush Pink) */
+    background-color: #FFF0F5; 
+    /* FONT COLOR REQUIREMENT (Deep Espresso Bronze) */
+    color: #3D2B1F; 
+    line-height: 1.8;
 }
 
-#intro-section, #guide-section, #video-section, #app-section {
-    margin: 50px auto;
+/* 3 DIVS FOR POSITIONING/STYLING REQUIREMENT */
+#intro-section, #guide-section, #video-section, #app-section, #tableau-section {
+    margin: 40px auto;
     padding: 40px;
-    max-width: 800px;
-    background-color: #fcf6f2; /* Very light tan */
-    border: 1px solid #e0e0e0;
+    max-width: 750px;
+    background-color: #ffffff; /* White cards to make the pink background feel clean */
+    border-top: 6px solid #CD7F32; /* Metallic Bronze */
+    border-bottom: 2px solid #D4AF37; /* Champagne Gold */
+    box-shadow: 0 15px 35px rgba(205, 127, 50, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #804A00; /* Rich Bronze */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+/* Secondary font for paragraphs for better readability */
+p, li, label {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
 }
 
 button {
-    background-color: #333; /* Black Button */
-    color: #fff;
-    padding: 15px 40px;
+    background-color: #D4AF37; /* Gold */
+    color: white;
     border: none;
-    transition: 0.3s;
+    padding: 14px 32px;
+    cursor: pointer;
+    border-radius: 4px; /* Sophisticated slight round */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #BC8F8F; /* Dusty Rose on Hover */
+    background-color: #CD7F32; /* Bronze on hover */
+    transform: translateY(-2px);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 2px solid #D4AF37;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #CD7F32;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
