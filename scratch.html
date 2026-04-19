@@ -2,92 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spray Tanning 101 | Your Ultimate Guide</title>
+    <title>Spray Tanning 101 | BetterBronzed Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyles.css">
-    <style>
-        /* Centering styles for branding */
-        #intro-section, #tableau-section, #video-section {
-            text-align: center;
-        }
-        #intro-section img {
-            display: block;
-            margin: 10px auto 20px auto;
-            border-radius: 8px;
-        }
-        /* Top Navigation Styling */
-        nav {
-            background-color: #ffffff;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #D4AF37;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4A3728;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-    </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">Home Portfolio</a>
-        <a href="#guide-section">Spray Tan Guide</a>
+        <a href="index.html">Professional Portfolio</a>
+        <a href="#guide-section">The Guide</a>
         <a href="#app-section">Customizer App</a> 
-        <a href="#tableau-section">Data Hub</a>
+        <a href="#tableau-section">Industry Data</a>
     </nav>
 
-    <h1 id="top" style="text-align: center;">Spray Tanning 101: Professional Glow</h1>
+    <h1 id="top" style="text-align: center; margin-top: 50px;">Spray Tanning 101</h1>
 
     <div id="intro-section">
-        <p>Mastering the professional spray tan requires precision and the right aftercare.</p>
-        <img src="https://chrislovesjulia.com/wp-content/uploads/2023/03/IMG_3225.jpg" alt="Spray Tan Setup" width="400">
+        <p>Achieving a professional-grade glow requires precise technique and expert aftercare.</p>
+        <img src="https://st2.depositphotos.com/2305339/5750/i/450/depositphotos_57508235-stock-photo-close-up-of-female-legs.jpg" alt="Spray Tanning Result">
+        <img src="https://chrislovesjulia.com/wp-content/uploads/2023/03/IMG_3225.jpg" alt="Spray Tan Setup">
     </div>
 
     <div id="guide-section">
-        <h2>The Spray Tan Guide</h2>
+        <h2>The 3-Step Process</h2>
         <ol>
-            <li>Pre-Session Prep
+            <li>Preparation
                 <ul>
-                    <li>Exfoliate and shave 24 hours prior</li>
-                    <li>No lotions or perfumes on the day of</li>
-                    <li>Wear dark, oversized clothing</li>
+                    <li>Exfoliate 24 hours before</li>
+                    <li>No oils or lotions on session day</li>
+                    <li>Wear dark, loose-fitting clothes</li>
                 </ul>
             </li>
-            <li>In the Booth</li>
-            <li>Post-Tan Care</li>
+            <li>The Session</li>
+            <li>Maintenance</li>
         </ol>
     </div>
 
     <div id="video-section">
-        <h2>Watch the Spray Tan Technique</h2>
+        <h2>Watch the Technique</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lTqNTSlxXQQ?si=8dk_eofVlcmuuYpn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div id="app-section">
-        <h2>Spray Tan Solution Picker</h2>
-        <p>Select your tone and occasion for the perfect professional recommendation:</p>
+        <h2>Customized Solution Picker</h2>
+        <p>Find your perfect rinse time and solution:</p>
         
-        <label>Your Skin Tone:</label>
+        <label>Skin Tone:</label>
         <select id="skinTone">
             <option value="Fair">Fair / Pale</option>
             <option value="Medium">Medium / Olive</option>
             <option value="Deep">Deep / Dark</option>
         </select>
         <br><br>
-        <label>The Occasion:</label>
+        <label>Occasion:</label>
         <select id="event">
-            <option value="Wedding">Wedding (Natural & Elegant)</option>
-            <option value="Vacation">Vacation (Deep & Tropical)</option>
-            <option value="Weekly">Weekly Glow (Sun-Kissed)</option>
+            <option value="Wedding">Wedding (Natural)</option>
+            <option value="Vacation">Vacation (Tropical)</option>
+            <option value="Weekly">Weekly (Sun-Kissed)</option>
         </select>
         <br><br>
-        <button onclick="calculateTan()">Get My Recommendation</button>
-        <h3 id="result" style="margin-top:20px; color:#d2b48c;"></h3>
+        <button onclick="calculateTan()">Get Recommendation</button>
+        <h3 id="result" style="margin-top:25px; color:#4A3728;"></h3>
     </div>
 
     <script>
@@ -96,11 +71,11 @@
             var occasion = document.getElementById("event").value;
             var resultText = "";
             if (occasion === "Wedding") {
-                resultText = "For your Wedding, we recommend a " + tone + " Rapid Solution. Rinse in 2 hours for a timeless, natural glow.";
+                resultText = "Recommendation: " + tone + " Rapid Glow. Rinse in 2 hours for a clean, natural finish.";
             } else if (occasion === "Vacation") {
-                resultText = "For Vacation, go for the Express Dark. Rinse in 8 hours to achieve maximum bronzing.";
+                resultText = "Recommendation: Express Dark. Rinse in 8 hours for maximum tropical bronzing.";
             } else {
-                resultText = "For a Weekly Glow, a standard " + tone + " Medium is perfect. Rinse in 4 hours.";
+                resultText = "Recommendation: " + tone + " Medium. Rinse in 4 hours for a fresh weekly glow.";
             }
             document.getElementById("result").innerHTML = resultText;
         }
@@ -109,23 +84,17 @@
     <div id="tableau-section">
         <h2>Spray Tan Industry Data</h2>
         <div class='tableauPlaceholder' id='viz1776545394900' style='position: relative; margin: 0 auto;'>
-            <noscript>
-                <a href='#'><img alt='Handheld Tanning Solutions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1_rss.png' style='border: none' /></a>
-            </noscript>
+            <noscript><a href='#'><img alt='Handheld Tanning Solutions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                 <param name='embed_code_version' value='3' /> 
                 <param name='site_root' value='' />
                 <param name='name' value='HandheldTanningSolutions&#47;HandheldTanningSolutions' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
                 <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HandheldTanningSolutions&#47;HandheldTanningSolutions&#47;1.png' /> 
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /><param name='language' value='en-US' />
             </object>
         </div>                
         <script type='text/javascript'>                    
@@ -138,9 +107,8 @@
         </script>
     </div>
 
-    <p style="text-align: center; margin-top: 50px;">
-        <a href="index.html">Back to Professional Portfolio</a> | 
-        <a href="#top">Back to Top</a>
-    </p>
+    <footer style="text-align: center; padding: 40px;">
+        <p><a href="#top" style="color: #4A3728; text-decoration: none; font-weight: bold;">Back to Top</a></p>
+    </footer>
 </body>
 </html>
