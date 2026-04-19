@@ -1,9 +1,8 @@
-/* Palette: Espresso & Cream Luxe with Background Image */
-
+/* BetterBronzed Luxe Style - Final Centered Version */
 body {
     font-family: 'Playfair Display', serif; 
-    /* Lowering the 0.90 to 0.70 makes the background photo more visible */
-    background-image: linear-gradient(rgba(249, 245, 242, 0.70), rgba(249, 245, 242, 0.70)), 
+    /* 0.65 makes the background image much more visible than before */
+    background-image: linear-gradient(rgba(249, 245, 242, 0.65), rgba(249, 245, 242, 0.65)), 
                       url('https://st2.depositphotos.com/2305339/5750/i/450/depositphotos_57508235-stock-photo-close-up-of-female-legs.jpg');
     background-size: cover;
     background-position: center;
@@ -13,80 +12,45 @@ body {
     margin: 0;
     padding: 0;
 }
-/* 3+ DIVS REQUIREMENT */
+
 #intro-section, #guide-section, #video-section, #app-section, #tableau-section, .resume-wrapper {
     margin: 50px auto;
-    padding: 40px;
+    padding: 45px;
     max-width: 800px;
     background-color: rgba(255, 255, 255, 0.98); 
-    border-top: 8px solid #4A3728; /* Espresso */
-    border-bottom: 2px solid #D2B48C; /* Tan */
+    border-top: 8px solid #4A3728;
+    border-bottom: 2px solid #D2B48C;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center; /* Centers text and inline elements */
 }
 
-h1, h2 {
-    color: #4A3728;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 700;
-    text-align: center;
+/* Forces images and videos to be centered blocks */
+img, iframe {
+    display: block;
+    margin: 30px auto !important; 
+    max-width: 100%;
+    border-radius: 4px;
 }
 
-p, li, label {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.05em;
-    color: #55524E;
-}
-
-/* LIST SPACING FIX */
-.luxe-list {
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.luxe-list > li {
-    margin-bottom: 25px; 
-    font-weight: bold;
-    color: #4A3728;
-}
-
-.luxe-list ul {
-    margin-top: 10px;
-    font-weight: normal;
-    list-style-type: circle;
-}
-
-.luxe-list ul li {
-    margin-bottom: 8px;
-}
-
-button {
+/* The BIG Luxe Button on your Resume */
+.luxe-button {
+    display: inline-block;
     background-color: #4A3728;
-    color: #ffffff;
-    border: none;
-    padding: 15px 35px;
-    cursor: pointer;
+    color: #ffffff !important;
+    padding: 20px 45px;
+    margin-top: 30px;
+    text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    border-radius: 4px;
     transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(74, 55, 40, 0.3);
 }
 
-button:hover {
+.luxe-button:hover {
     background-color: #8B735B;
-}
-
-nav {
-    background-color: #ffffff;
-    padding: 20px;
-    border-bottom: 1px solid #EAE0D5;
-    text-align: center;
-}
-
-nav a {
-    color: #4A3728;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
+    transform: scale(1.05);
 }
