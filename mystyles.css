@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Playfair Display', serif; 
-    /* BACKGROUND IMAGE REQUIREMENT */
-    background-image: linear-gradient(rgba(249, 245, 242, 0.90), rgba(249, 245, 242, 0.90)), 
+    /* Lowering the 0.90 to 0.70 makes the background photo more visible */
+    background-image: linear-gradient(rgba(249, 245, 242, 0.70), rgba(249, 245, 242, 0.70)), 
                       url('https://st2.depositphotos.com/2305339/5750/i/450/depositphotos_57508235-stock-photo-close-up-of-female-legs.jpg');
     background-size: cover;
     background-position: center;
@@ -13,7 +13,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* 3+ DIVS REQUIREMENT */
 #intro-section, #guide-section, #video-section, #app-section, #tableau-section, .resume-wrapper {
     margin: 50px auto;
