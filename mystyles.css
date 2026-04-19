@@ -1,85 +1,82 @@
-/* BetterBronzed Luxe Style - Final Centered Version */
+/* BetterBronzed - The "Stable" Final Version */
+
 body {
     font-family: 'Playfair Display', serif; 
-    /* 0.65 makes the background image much more visible than before */
     background-image: linear-gradient(rgba(249, 245, 242, 0.65), rgba(249, 245, 242, 0.65)), 
                       url('https://st2.depositphotos.com/2305339/5750/i/450/depositphotos_57508235-stock-photo-close-up-of-female-legs.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #2D2621; 
-    line-height: 1.8;
+    line-height: 1.6;
     margin: 0;
-    padding: 0;
 }
 
-/* Fix for text alignment and spacing */
-#intro-section p, #guide-section p, #app-section p {
-    text-align: center;
-    margin-bottom: 20px;
-    display: block; /* Ensures text stays on its own line */
-    width: 100%;
+/* This centers the "cards" on the page */
+#intro-section, #guide-section, #video-section, #app-section, #tableau-section, .resume-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center;    /* Centers everything inside the box horizontally */
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.98); 
+    border-top: 8px solid #4A3728;
+    border-bottom: 2px solid #D2B48C;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Bulletproof Centering for Media without messing up text */
+/* Forces images and videos to be centered without affecting text */
 img, iframe {
-    display: block;
-    margin: 30px auto !important; 
-    max-width: 90%; /* Leaves a little breathing room on the sides */
-    height: auto;
-    clear: both; /* Prevents text from trying to wrap around the sides */
-}
-
-/* Fix for the lists */
-.luxe-list {
-    display: inline-block; /* Keeps the list group centered but text left-aligned */
-    text-align: left;
-    margin: 0 auto;
-}
-
-/* Forces images and videos to be centered blocks */
-img, iframe {
-    display: block;
-    margin: 30px auto !important; 
     max-width: 100%;
-    border-radius: 4px;
-}
-
-/* The BIG Luxe Button on your Resume */
-.luxe-button {
-    display: inline-block;
-    background-color: #4A3728;
-    color: #ffffff !important;
-    padding: 20px 45px;
-    margin-top: 30px;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    border-radius: 4px;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(74, 55, 40, 0.3);
-}
-
-.luxe-button:hover {
-    background-color: #8B735B;
-    transform: scale(1.05);
-}
-/* Centering Fix for Media */
-#intro-section img, 
-#video-section iframe {
-    display: block;       /* This tells the browser the image/video is a separate block */
-    margin-left: auto;    /* Pushes from the left to the center */
-    margin-right: auto;   /* Pushes from the right to the center */
-    max-width: 100%;      /* Ensures it doesn't break out of the box on mobile */
+    height: auto;
+    margin: 20px 0;
     border: none;
 }
 
-/* Specifically for the YouTube video to keep its size professional */
-#video-section iframe {
-    width: 560px; 
-    height: 315px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Adds a luxe depth to the video player */
+h1, h2 {
+    color: #4A3728;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p, label {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    max-width: 600px; /* Prevents text from stretching too wide */
+}
+
+/* Fix for the lists - keeps the text left-aligned inside the centered box */
+.luxe-list {
+    text-align: left;
+    align-self: flex-start; /* Aligns the whole list to the left side of the card */
+    margin-left: 20%;      /* Gives it a nice centered feel */
+}
+
+.luxe-list > li {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.luxe-list ul {
+    font-weight: normal;
+    text-transform: none;
+    list-style-type: circle;
+}
+
+/* Nav & Buttons */
+nav { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
+nav a { margin: 0 15px; text-decoration: none; color: #4A3728; font-weight: bold; }
+
+.luxe-button {
+    display: inline-block;
+    background-color: #4A3728;
+    color: #fff !important;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
 }
