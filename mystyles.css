@@ -1,28 +1,25 @@
-/* General Page Styling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Font Family Requirement */
-    background-color: #f9f4f0; /* Custom Background Color Requirement */
-    color: #3d2b1f; /* Font Color Requirement */
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif; /* Minimalist Sans-Serif */
+    background-color: #FDFDFD;
+    color: #2D2D2D;
 }
 
-/* 3 Divs for positioning and styling blocks (Requirement) */
 #intro-section, #guide-section, #video-section, #app-section {
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 700px; 
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 800px;
+    background-color: #fcf6f2; /* Very light tan */
+    border: 1px solid #e0e0e0;
 }
 
-/* Small Web App Button Styling */
-#app-section button {
-    background-color: #d2b48c;
+button {
+    background-color: #333; /* Black Button */
+    color: #fff;
+    padding: 15px 40px;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #BC8F8F; /* Dusty Rose on Hover */
 }
